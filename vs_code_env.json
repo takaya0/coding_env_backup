@@ -1,0 +1,103 @@
+{
+    "latex-workshop.latex.tools": [
+        {
+            "command": "ptex2pdf",
+            "args": [
+                "-interaction=nonstopmode",
+                "-l",
+                "-ot",
+                "-kanji=utf8 -synctex=1",
+                "%DOC%"
+            ],
+            "name": "Step 1: ptex2pdf"
+        },
+        {
+            "command": "ptex2pdf",
+            "args": [
+                "-interaction=nonstopmode",
+                "-l",
+                "-ot",
+                "-kanji=utf8 -synctex=1",
+                "%DOC%"
+            ],
+            "name": "Step 2: ptex2pdf"
+        }
+    ],
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "toolchain",
+            "tools": [
+                "Step 1: ptex2pdf",
+                "Step 2: ptex2pdf"
+            ]
+        }
+    ],
+    // latex-workshop.latex.clean.fileTypes: クリーンアップ時に削除されるファイルの拡張子
+    // LaTeX 文書はビルド時に一時ファイルとしていくつかのファイルを生成するが、最終的に必要となるのは
+    // PDF ファイルのみである場合などが多い。また、LaTeX のビルド時に失敗した場合、失敗時に生成された
+    // 一時ファイルの影響で、修正後のビルドに失敗してしまう事がよくある。そのため、一時的なファイルを
+    // 削除する機能 (クリーンアップ) が LaTeX Workshop には備わっている。
+    "latex-workshop.latex.clean.fileTypes": [
+        "*.aux",
+        "*.bbl",
+        "*.blg",
+        "*.idx",
+        "*.ind",
+        "*.lof",
+        "*.lot",
+        "*.out",
+        "*.toc",
+        "*.acn",
+        "*.acr",
+        "*.alg",
+        "*.glg",
+        "*.glo",
+        "*.gls",
+        "*.ist",
+        "*.fls",
+        "*.log",
+        "*.fdb_latexmk",
+        "*.synctex.gz",
+        // for Beamer files
+        "_minted*",
+        "*.nav",
+        "*.snm",
+        "*.vrb",
+    ],
+    "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.message.log.show": true,
+    "latex-workshop.synctex.afterBuild.enabled": true,
+    "editor.renderControlCharacters": true,
+    "editor.formatOnPaste": false,
+    "editor.formatOnSave": true,
+    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: LLVM, IndentWidth: 4 }",
+    "latex-workshop.message.latexlog.exclude": [
+        "(Font shape `(JY1|JT1|JY2|JT2)(/.*)(sl|it|sc)'.*|Some font shapes were not available.*)"
+    ],
+    //"python.linting.enabled": true,
+    //"python.linting.pylintEnabled": true, // pylint は使わない
+    //"python.linting.pycodestyleEnabled": false, // pep8 は使わない
+    //"python.linting.flake8Enabled": false, // 文法チェックにflake8 を使う
+    //"python.linting.pylintArgs": [ // flake8 の設定
+    //"--ignore=E111, E114, E402, E501",
+    //"--ignore=invalid-name"
+    //],
+    //"editor.wordBasedSuggestions": false,
+    "git.autofetch": true,
+    "window.zoomLevel": 1,
+    "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
+    "files.autoSave": "off",
+    "kite.showWelcomeNotificationOnStartup": false,
+    "workbench.startupEditor": "newUntitledFile",
+    "C_Cpp.updateChannel": "Insiders",
+    "workbench.iconTheme": "vscode-icons",
+    "python.pythonPath": "/Users/yataka/.pyenv/shims/python",
+    "http.proxySupport": "off",
+    "latex-utilities.countWord.format": "${words} Words",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "python.jediEnabled": false,
+    "workbench.colorTheme": "Kary Pro Colors － Dark",
+    "editor.defaultFormatter": "ms-python.python",
+    "editor.codeActionsOnSave": null,
+}
