@@ -1,0 +1,95 @@
+{
+    // Place your snippets for latex here. Each snippet is defined under a snippet name and has a prefix, body and 
+    // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+    // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+    // same ids are connected.
+    // Example:
+    // "Print to console": {
+    // 	"prefix": "log",
+    // 	"body": [
+    // 		"console.log('$1');",
+    // 		"$2"
+    // 	],
+    // 	"description": "Log output to console"
+    // }
+    "jsarticle": {
+        "prefix": "jsarticle",
+        "body": [
+            "\\documentclass[11pt, a4paper, dvipdfmx]{jsarticle}",
+            "",
+            "\\usepackage{amsmath}",
+            "\\usepackage{amsthm}",
+            "\\usepackage{color}",
+            "\\usepackage{ascmac}",
+            "\\usepackage{amsfonts}",
+            "\\usepackage{mathrsfs}",
+            "\\usepackage{amssymb}",
+            "\\usepackage{graphicx}",
+            "\\usepackage{fancybox}",
+            "\\usepackage{enumerate}",
+            "\\usepackage{verbatim}",
+            "\\usepackage{subfigure}",
+            "\\usepackage{proof}",
+            "\\usepackage{listings}",
+            "\\usepackage{otf}",
+            "\\usepackage{algorithm}",
+            "\\usepackage{algorithmic}",
+            "\\usepackage{tikz}",
+            "\\usepackage{mathtools}",
+            "\\usepackage[dvipdfmx]{hyperref}",
+            "\\usepackage{pxjahyper}",
+            "",
+            "",
+            "\\theoremstyle{definition}",
+            "",
+            "\\newtheorem{Axiom+}{Axiom}[section]",
+            "\\newtheorem{Definition+}[Axiom+]{Definition}",
+            "\\newtheorem{Theorem+}[Axiom+]{Theorem}",
+            "\\newtheorem{Proposition+}[Axiom+]{Proposition}",
+            "\\newtheorem{Lemma+}[Axiom+]{Lemma}",
+            "\\newtheorem{Example+}[Axiom+]{Example}",
+            "\\newtheorem{Corollary+}[Axiom+]{Corollary}",
+            "\\newtheorem{Claim+}[Axiom+]{Claim}",
+            "\\newtheorem{Property+}[Axiom+]{Property}",
+            "\\newtheorem{Attention+}[Axiom+]{Attention}",
+            "\\newtheorem{Question+}[Axiom+]{Question}",
+            "\\newtheorem{Problem+}[Axiom+]{Problem}",
+            "\\newtheorem{Consideration+}[Axiom+]{Consideration}",
+            "\\newtheorem{Remark+}[Axiom+]{Remark}",
+            "",
+            "\\newcommand{\\N}{\\mathbb{N}}",
+            "\\newcommand{\\Z}{\\mathbb{Z}}",
+            "\\newcommand{\\Q}{\\mathbb{Q}}",
+            "\\newcommand{\\R}{\\mathbb{R}}",
+            "\\newcommand{\\C}{\\mathbb{C}}",
+            "\\newcommand{\\p}{\\partial}",
+            "\\newcommand{\\lan}{\\langle}",
+            "\\newcommand{\\ran}{\\rangle}",
+            "\\newcommand{\\pal}{\\parallel}",
+            "\\newcommand{\\dip}{\\displaystyle}",
+            "\\newcommand{\\e}{\\varepsilon}",
+            "\\newcommand{\\dl}{\\delta}",
+            "\\newcommand{\\pphi}{\\varphi}",
+            "\\newcommand{\\ti}{\\tilde}",
+            "\\newcommand{\\argmax}{\\mathop{\\rm arg~max}\\limits}",
+            "\\newcommand{\\argmin}{\\mathop{\\rm arg~min}\\limits}",
+            "",
+            "\\title{$1}",
+            "\\author{$2}",
+            "\\date{}",
+            "\\begin{document}",
+            "    \\maketitle",
+            "\\end{document}",
+        ],
+        "description": "output jsarticle template"
+    },
+    "def": {
+        "prefix": "def",
+        "body": [
+            "\\begin{Definition+}($1)\\\\\\",
+            "    $2",
+            "\\end{Definition+}",
+        ],
+        "description": "output def snipet"
+    }
+}

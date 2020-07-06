@@ -70,34 +70,27 @@
     "editor.renderControlCharacters": true,
     "editor.formatOnPaste": false,
     "editor.formatOnSave": true,
-    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: LLVM, IndentWidth: 4 }",
+    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4 }",
     "latex-workshop.message.latexlog.exclude": [
         "(Font shape `(JY1|JT1|JY2|JT2)(/.*)(sl|it|sc)'.*|Some font shapes were not available.*)"
     ],
-    //"python.linting.enabled": true,
-    //"python.linting.pylintEnabled": true, // pylint は使わない
-    //"python.linting.pycodestyleEnabled": false, // pep8 は使わない
-    //"python.linting.flake8Enabled": false, // 文法チェックにflake8 を使う
-    //"python.linting.pylintArgs": [ // flake8 の設定
-    //"--ignore=E111, E114, E402, E501",
-    //"--ignore=invalid-name"
-    //],
-    //"editor.wordBasedSuggestions": false,
     "git.autofetch": true,
     "window.zoomLevel": 1,
-    "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
+    "terminal.integrated.shell.osx": "/bin/zsh",
     "files.autoSave": "off",
     "kite.showWelcomeNotificationOnStartup": false,
     "workbench.startupEditor": "newUntitledFile",
     "C_Cpp.updateChannel": "Insiders",
     "workbench.iconTheme": "vscode-icons",
-    "python.pythonPath": "/Users/yataka/.pyenv/shims/python",
+    "python.pythonPath": "/Users/takaya/.pyenv/shims/python",
     "http.proxySupport": "off",
     "latex-utilities.countWord.format": "${words} Words",
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "python.jediEnabled": false,
     "workbench.colorTheme": "Kary Pro Colors － Dark",
-    "editor.defaultFormatter": "ms-python.python",
-    "editor.codeActionsOnSave": null,
+    "remote.extensionKind": {},
+    "omnisharp.useGlobalMono": "always",
+    "omnisharp.monoPath": "/usr/local/Cellar/mono/6.8.0.123",
+    "python.languageServer": "Microsoft"
 }
