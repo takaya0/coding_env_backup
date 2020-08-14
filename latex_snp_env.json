@@ -79,7 +79,7 @@
             "\\date{}",
             "\\begin{document}",
             "    \\maketitle",
-            "\\end{document}",
+            "\\end{document}"
         ],
         "description": "output jsarticle template"
     },
